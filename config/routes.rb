@@ -5,6 +5,10 @@ ControllerExercise::Application.routes.draw do
 
   resources :users
 
+  get '/products/new' => 'products#new'
+
+  post '/products' => 'products#create'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
